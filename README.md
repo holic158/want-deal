@@ -1,2 +1,1 @@
-# want-deal
-원딜프로젝트
+# want-deal - 알구몬 클론
