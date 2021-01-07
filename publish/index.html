@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>WANTDEAL - Publish List</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <style type="text/css">
+        body {
+            background-color: #f9f9f9;
+        }
+        
+        img {
+            width: auto !important
+        }
+        
+        * {
+            font-size: 12px
+        }
+        
+        .table_type1 {
+            margin-bottom: 50px;
+        }
+        
+        .table_type1 tbody tr td:nth-child(1) {
+            text-align: center;
+        }
+        
+        .table_type1 tbody tr:hover td {
+            background-color: #eeeedd;
+        }
+        
+        .red {
+            color: #ff0000;
+        }
+        
+        .green {
+            color: #11ff55;
+        }
+        
+        .blue {
+            color: #0000ee;
+        }
+        
+        .line {
+            text-decoration: line-through;
+        }
+    </style>
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.table_type1 tbody tr').each(function(i) {
+                $(this).children('td:eq(0)').text(i + 1);
+            })
+
+            $('.mainLink li a').click(function() {
+                var i = $(this).parent('li').index();
+
+                $('.mainLink li').removeClass('active');
+                $(this).parent().addClass('active');
+
+                $('#content_list').find('.section').hide();
+                $('#content_list .tab' + i).show();
+            });
+
+            //$('#content_list').find('.section').hide().end().find('.tab0').show();
+        })
+    </script>
+</head>
+
+<body>
+    <div id="wrap">
+
+        <div id="content_guide">
+            <h1 class="title">WANTDEAL</h1>
+        </div>
+
+        <!-- content_list -->
+        <div id="content_list">
+
+            <div class="tab_wrap">
+                <ul class="tab_line">
+                    <li class="active"><a href="#none"><span>WANTDEAL</span></a></li>
+                </ul>
+            </div>
+
+            <div class="tab_wrap mainLink">
+                <ul class="tab_line">
+                    <li><a href="#none"><span>메인</span></a></li>
+                    <li><a href="#none"><span>로그인</span></a></li>
+                    <li><a href="#none"><span>딜 관련 화면</span></a></li>
+                    <li><a href="#none"><span>마이페이지 관련</span></a></li>
+                </ul>
+            </div>
+
+            <!-- section -->
+            <div class="section tab0">
+                <h2>메인
+                    <!--strong style="color:#ff0000;">화면설계서 V1.2 적용완료</strong-->
+                </h2>
+                <table class="table_type1">
+                    <colgroup>
+                        <col style="width:3%">
+                        <col style="width:13%">
+                        <col style="width:15%">
+                        <col style="width:15%">
+                        <col style="width:15%">
+                        <col style="width:8%">
+                        <col style="width:auto">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>Num</th>
+                            <th>Depth 2</th>
+                            <th>Depth 3</th>
+                            <th>Depth 4</th>
+                            <th>파일</th>
+                            <th>완료여부</th>
+                            <th>비고</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td>메인</td>
+                            <td>미로그인 상태 메인화면</td>
+                            <td></td>
+                            <td><a href="./html/MAN-01-001.html" target="_blank">MAN-01-001.html</a></td>
+                            <td class="c">2021-01-07</td>
+                            <td>2021-01-07 메인화면 첫 반영</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>메인</td>
+                            <td>로그인 상태 메인화면</td>
+                            <td></td>
+                            <td><a href="./html/MAN-01-002.html" target="_blank">MAN-01-002.html</a></td>
+                            <td class="c">미완</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- section -->
+
+            <!-- section -->
+            <div class="section tab1">
+                <h2>로그인
+                    <!--strong style="color:#ff0000;">화면설계서 V1.2 적용완료</strong-->
+                </h2>
+                <table class="table_type1">
+                    <colgroup>
+                        <col style="width:3%">
+                        <col style="width:13%">
+                        <col style="width:15%">
+                        <col style="width:15%">
+                        <col style="width:15%">
+                        <col style="width:8%">
+                        <col style="width:auto">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>Num</th>
+                            <th>Depth 2</th>
+                            <th>Depth 3</th>
+                            <th>Depth 4</th>
+                            <th>파일</th>
+                            <th>완료여부</th>
+                            <th>비고</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td>로그인</td>
+                            <td>로그인화면</td>
+                            <td></td>
+                            <td><a href="./html/LOG-01-001.html" target="_blank">LOG-01-001.html</a></td>
+                            <td class="c">미완</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- section -->
+
+            <!-- section -->
+            <div class="section tab2">
+                <h2>딜 관련 화면</h2>
+                <table class="table_type1" style="margin-bottom:10px;">
+                    <colgroup>
+                        <col style="width:3%">
+                        <col style="width:13%">
+                        <col style="width:15%">
+                        <col style="width:15%">
+                        <col style="width:15%">
+                        <col style="width:8%">
+                        <col style="width:auto">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>Num</th>
+                            <th>Depth 2</th>
+                            <th>Depth 3</th>
+                            <th>Depth 4</th>
+                            <th>파일</th>
+                            <th>완료여부</th>
+                            <th>비고</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <a href="../html/off/OFF-01-001.html" target="_blank"></a>
+                            </td>
+                            <td class="c red">미완</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <a href="../html/cer/CER-03-001.html" target="_blank"></a>
+                            </td>
+                            <td class="c red">미완</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <a href="../html/off/OFF-02-001.html" target="_blank"></a>
+                            </td>
+                            <td class="c red">미완</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- section -->
+
+            <!-- section -->
+            <div class="section tab3">
+                <h2>마이페이지
+                    <!--strong style="color:#ff0000;">화면설계서 V1.2 적용완료</strong-->
+                </h2>
+                <table class="table_type1">
+                    <colgroup>
+                        <col style="width:3%">
+                        <col style="width:13%">
+                        <col style="width:15%">
+                        <col style="width:15%">
+                        <col style="width:15%">
+                        <col style="width:8%">
+                        <col style="width:auto">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>Num</th>
+                            <th>Depth 2</th>
+                            <th>Depth 3</th>
+                            <th>Depth 4</th>
+                            <th>파일</th>
+                            <th>완료여부</th>
+                            <th>비고</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <a href="../html/jon/JON-01-001.html" target="_blank"></a>
+                            </td>
+                            <td class="c red">미완</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <a href="../html/jon/JON-02-001.html" target="_blank"></a>
+                            </td>
+                            <td class="c red">미완</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <a href="../html/jon/JON-03-001.html" target="_blank"></a>
+                            </td>
+                            <td class="c red">미완</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- section -->
+        </div>
+        <!-- content_list -->
+    </div>
+</body>
+
+</html>
